@@ -26,7 +26,7 @@ signInForm.addEventListener("submit", async (e) => {
     
         // show welcome message
         showMessage("Bienvenido:" + userCredentials.user.email);
-        window.location.href = '/src/alumnos.html';
+        window.location.href = '/alumnos.html';
       } catch (error) {
         if (error.code === 'auth/wrong-password') {
           showMessage("Password Incorrecto", "error")
